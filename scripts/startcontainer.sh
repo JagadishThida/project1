@@ -6,4 +6,5 @@ set -e
 docker pull jagadishthida/app
 
 # Run the Docker image as a container
+docker login -u jagadishthida -p #Jagadish123
 docker run -t o -it -p 5001:5001 jagadishthida/app
