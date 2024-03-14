@@ -2,7 +2,7 @@
 set -e
 
 # Stop the running container (if any)
-port=<5000>
+port=<50001>
 container_id=$(docker ps -q --filter "publish=${port}")
 
 if [ -n "$container_id" ]; then
