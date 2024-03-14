@@ -2,4 +2,4 @@
 set -e
 
 # Stop the running container (if any)
-docker rm -f $(docker ps -q -f "port=<port_number>")
+docker ps -q --filter "publish=<5000>" | xargs -r docker stop
